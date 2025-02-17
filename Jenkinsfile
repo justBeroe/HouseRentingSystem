@@ -6,11 +6,11 @@ pipeline {
                bat 'dotnet build'
             }
         }
+
         stage('Run dotnet tests') {
         steps {
             bat 'dotnet test'
-        }
-     
+        }     
     }
-
+}
 }
